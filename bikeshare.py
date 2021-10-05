@@ -23,8 +23,7 @@ def get_filters(city, month, day):
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
     while True:
-        city = input(
-            "What city's data are you interested in; chicago, new york city or washington? \nplease select one - \n"
+        city = input("What city's data are you interested in; chicago, new york city or washington? \nplease select one - \n"
         ).lower()
         if city == "chicago" or city == "new york city" or city == "washington":
             print("---You have selected {}\n".format(city))
@@ -41,17 +40,13 @@ def get_filters(city, month, day):
         elif time == "yes":
             time = input("Do you want to filter by month, day or both - \n").lower()
             if time == "month":
-                month = input(
-                    "What month do you want data for? January, February, March, April, May, or June \nplease select one - \n"
-                ).lower()
+                month = input("What month do you want data for? January, February, March, April, May, or June \nplease select one - \n").lower()
                 day = "all"
                 print("--- You have filtered by {}\n".format(month))
                 break
             elif time == "day":
                 month = "all"
-                day = input(
-                    "What day of the week are you interested in? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday \nplease select one - \n"
-                ).lower()
+                day = input("What day of the week are you interested in? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday \nplease select one - \n").lower()
                 print("--- You have filtered by {}\n".format(day))
                 break
             elif time == "both":

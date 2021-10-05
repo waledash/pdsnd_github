@@ -11,7 +11,7 @@ CITY_DATA = {
 
 def get_filters(city, month, day):
     """
-    Asks user to specify a city, month, and day to analyze.
+    This asks the user to specify a city, month, and day to analyze.
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -85,7 +85,7 @@ def get_filters(city, month, day):
 
 def load_data(city, month, day):
     """
-    Loads data for the specified city and filters by month and day if applicable.
+    This loads data for the specified city and filters by month and day if applicable.
     Args:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -132,7 +132,7 @@ def time_stats(bikeshare_data):
 
 
 def station_stats(bikeshare_data):
-    """Displays statistics on the most popular stations and trip."""
+    """This displays statistics on the most popular stations and trip."""
 
     print("\nCalculating The Most Popular Stations and Trip...\n")
     start_time = time.time()
@@ -165,7 +165,7 @@ def station_stats(bikeshare_data):
 
 
 def trip_duration_stats(bikeshare_data):
-    """Displays statistics on the total and average trip duration."""
+    """This displays statistics on the total and average trip duration."""
 
     print("\nCalculating Trip Duration...\n")
     start_time = time.time()
@@ -184,7 +184,7 @@ def trip_duration_stats(bikeshare_data):
 
 
 def user_stats(bikeshare_data):
-    """Displays statistics on bikeshare users."""
+    """This displays statistics on bikeshare users."""
 
     print("\nCalculating User Stats...\n")
     start_time = time.time()
